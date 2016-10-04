@@ -5,23 +5,43 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    title: 'Article One | Wills Martin',
-    heading: 'Article One',
-    date: 'Sep 20, 2016',
-    content:` 
-        <p>
-            This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
-        </p>
-        <p>
-            This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
-        </p>
-        <p>
-            This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
-        </p>
-        <p>
-            This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
-        </p>`
+var articles = {
+    articleOne : {
+        title: 'Article One | Wills Martin',
+        heading: 'Article One',
+        date: 'Sep 20, 2016',
+        content:` 
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
+            </p>
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
+            </p>
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
+            </p>
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
+            </p>`
+},
+    artilceTwo : {
+        title: 'Article Two | Wills Martin',
+        heading: 'Article Two',
+        date: 'Sep 22, 2016',
+        content: `
+            <p>
+                This is the content of my second article.
+            </p>`
+},
+    articleThree : {
+         title: 'Article Three | Wills Martin',
+        heading: 'Article Three',
+        date: 'Sep 23, 2016',
+        content: `
+            <p>
+                This is the content of my third article. This is the content of my third article. This is the content of my third article. 
+            </p>`
+    }
 };
 
 function createTemplate(data){
