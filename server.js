@@ -24,7 +24,7 @@ var articles = {
                 This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.This is the content of my first article.This is the content of my first article.
             </p>`
 },
-   'artilce-two': {
+    'artilce-two': {
         title: 'Article Two | Wills Martin',
         heading: 'Article Two',
         date: 'Sep 22, 2016',
