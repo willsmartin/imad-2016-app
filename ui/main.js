@@ -18,6 +18,6 @@ button.onclick = function() {
   };
   
   //Make the request
-  request.open('GET', 'http://willsmartin.imad.hasura-app.io/couter', true);
+  request.open('GET', 'http://willsmartin.imad.hasura-app.io/counter', true);
   request.send(null);
 };
