@@ -18,5 +18,6 @@ button.onclick = function() {
   };
   
   //Make the request
-  request.open('GET', 'http://willsmartin.imad.hasura-app.io');
+  request.open('GET', 'http://willsmartin.imad.hasura-app.io/couter', true);
+  request.send(null);
 };
