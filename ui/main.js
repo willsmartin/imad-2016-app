@@ -3,8 +3,9 @@
 //Counter code
 var button = document.getElementById('counter');
 button.onclick = function() {
-  //Make a request to the counter end point
+  //Create a request object
   var request = XMLHttpRequest();
+  
   //Capture the response and store it in a variable
   request.onreadystatechange = function () {
     if(request.readystate === XMLHttpRequest.DONE) {
@@ -17,4 +18,5 @@ button.onclick = function() {
   };
   
   //Make the request
+  request.open('GET', 'http://willsmartin.imad.hasura-app.io');
 };
