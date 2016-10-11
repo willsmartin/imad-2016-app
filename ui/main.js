@@ -46,6 +46,6 @@ submit.onclick = function() {
     }
   };
   //Make the request
-  request.open('GET', 'http://willsmartin.imad.hasura-app.io/submit-name?name=' + , true);
+  request.open('GET', 'http://willsmartin.imad.hasura-app.io/submit-name?name=' + name, true);
   request.send(null);
 };
